@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 export default function App() {
   const [apod, setApod] = useState(null);
   const [date, setDate] = useState("");
-  const apiKey = import.meta.env.VITE_NASA_API_KEY || "DEMO_KEY";
 
   const scrollToImageInfo = () => {
     document.getElementById("imageContainer")?.scrollIntoView({
